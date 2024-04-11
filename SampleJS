@@ -1,0 +1,19 @@
+function calculateBilling() { 
+	let basicServiceCost = 20; // R20 per month   //consider the difference var / let
+	let premiumServiceCost = 30; // R30 per month
+	let CALLS = 100;	
+	let MINUTES = 500;
+	let totalBill = 0; 
+	const customerID = document.getElementById('customerID').value; 
+	const callsMade = parseInt(document.getElementById('callsMade').value); 
+	const callMinutes = parseInt(document.getElementById('callMinutes').value); 
+	
+	if(callsMade > CALLS) { 
+		totalBill = basicServiceCost + (callMinutes * 0.5); // R0.50 per minute for extra calls
+	} 
+	else { 
+			totalBill = premiumServiceCost; 
+	}
+	let output = "Customer ID: " + customerID + " Billing Total: R" + totalBill.toFixed(2);
+	document.getElementById('billingResult').innerHTML = output;
+}
