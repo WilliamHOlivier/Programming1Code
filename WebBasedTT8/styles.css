@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#timetables {
+  margin-top: 20px;
+  text-align: left;
+  border: 0px solid black;
+  width: 100%;
+
+}
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  table-layout: fixed;
+}
+td, th {
+        background-color: LightGray;
+        border: 1px solid darkcyan;
+        color: black;
+        width: 120px;
+        text-align: center;
+        overflow: hidden;
+      }
+

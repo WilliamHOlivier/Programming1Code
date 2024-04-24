@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.timetable {
+  margin-bottom: 20px;
+}
+
+.timetable-header {
+  font-weight: bold;
+}
+
+.period {
+  display: inline-block;
+  width: calc(100% / 7);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+}
